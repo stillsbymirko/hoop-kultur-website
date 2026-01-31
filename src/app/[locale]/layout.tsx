@@ -5,6 +5,7 @@ import { routing } from '@/i18n/routing';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import WhatsAppWidget from '@/components/ui/WhatsAppWidget';
+import SmoothScroll from '@/components/ui/SmoothScroll';
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -38,10 +39,12 @@ export default async function LocaleLayout({
       </head>
       <body className="antialiased">
         <NextIntlClientProvider messages={messages}>
-          <Header />
-          <main>{children}</main>
-          <Footer />
-          <WhatsAppWidget />
+          <SmoothScroll>
+            <Header />
+            <main>{children}</main>
+            <Footer />
+            <WhatsAppWidget />
+          </SmoothScroll>
         </NextIntlClientProvider>
       </body>
     </html>
