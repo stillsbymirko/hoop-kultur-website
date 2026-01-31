@@ -1,0 +1,34 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "Über mich",
+    "services": "Angebot",
+    "preise": "Preise",
+    "halle": "Trainingshalle",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Level Up Your Game",
+    "subtitle": "Professionelles Basketball-Training in Berlin",
+    "cta": "Jetzt starten",
+    "secondary": "Mehr erfahren"
+  },
+  "about": {
+    "title": "Über mich",
+    "subtitle": "Dein Coach für Basketball-Excellence"
+  },
+  "services": {
+    "title": "Mein Angebot",
+    "subtitle": "Professionelles Training für jeden Level"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Lass uns zusammenarbeiten",
+    "whatsapp": "WhatsApp schreiben"
+  },
+  "footer": {
+    "rights": "Alle Rechte vorbehalten",
+    "privacy": "Datenschutz",
+    "imprint": "Impressum"
+  }
+}
