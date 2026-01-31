@@ -25,11 +25,11 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-[#0a0a0a]">
+    <section className="relative min-h-screen flex items-center bg-[#0a0a0a]">
       {/* Subtle gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0a0a0a]" />
       
-      <div className="relative text-center px-6 py-32">
+      <div className="relative text-left px-6 md:px-12 lg:px-20 py-32 max-w-4xl">
         {/* Main Title with Typing Animation */}
         <motion.h1
           className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold text-white tracking-tighter mb-6"
@@ -63,7 +63,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.3, duration: 0.6 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+          className="flex flex-col sm:flex-row gap-4 items-start"
         >
           <Link href={`/${locale}/contact`}>
             <motion.span
