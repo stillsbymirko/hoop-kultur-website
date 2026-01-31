@@ -14,7 +14,7 @@ export default async function ContactPage({
       {/* Hero */}
       <section className="pt-32 pb-16 bg-[#1a1a1a]">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <span className="text-lime-400 font-semibold text-sm uppercase tracking-wider">
+          <span className="text-[#f5f0e8] font-semibold text-sm uppercase tracking-wider">
             Kontakt
           </span>
           <h1 className="text-4xl md:text-6xl font-bold text-white mt-4 font-serif">
@@ -60,7 +60,7 @@ export default async function ContactPage({
                   href="mailto:kontakt@hoopkultur.de"
                   className="flex items-center gap-4 p-4 bg-white rounded-xl hover:shadow-md transition-shadow"
                 >
-                  <div className="w-12 h-12 bg-lime-400 rounded-full flex items-center justify-center">
+                  <div className="w-12 h-12 bg-[#f5f0e8] rounded-full flex items-center justify-center">
                     <Mail className="text-gray-900" size={24} />
                   </div>
                   <div>
@@ -104,7 +104,7 @@ export default async function ContactPage({
                 href="https://wa.me/4917790708811?text=Hi!%20Ich%20interessiere%20mich%20f%C3%BCr%20ein%20kostenloses%20Erstgespr%C3%A4ch."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-lime-400 hover:bg-lime-500 text-gray-900 px-8 py-4 rounded-full font-semibold transition-colors"
+                className="inline-flex items-center justify-center gap-2 bg-[#f5f0e8] hover:bg-[#ebe4d8] text-gray-900 px-8 py-4 rounded-full font-semibold transition-colors"
               >
                 Jetzt Termin vereinbaren
               </a>

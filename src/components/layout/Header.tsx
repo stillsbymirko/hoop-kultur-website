@@ -74,7 +74,7 @@ export default function Header() {
               >
                 HOOPKULTUR
               </motion.span>
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-lime-400 group-hover:w-full transition-all duration-300" />
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#f5f0e8] group-hover:w-full transition-all duration-300" />
             </Link>
 
             {/* Desktop Nav */}
@@ -120,7 +120,7 @@ export default function Header() {
                 <motion.span
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="inline-flex items-center gap-2 bg-lime-400 hover:bg-lime-300 text-gray-900 px-5 py-2.5 rounded-full text-sm font-semibold transition-colors shadow-lg shadow-lime-400/25"
+                  className="inline-flex items-center gap-2 bg-[#f5f0e8] hover:bg-[#ebe4d8] text-gray-900 px-5 py-2.5 rounded-full text-sm font-semibold transition-colors shadow-lg shadow-[#f5f0e8]/25"
                 >
                   <span className="relative flex h-2 w-2">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gray-900/40"></span>
@@ -196,7 +196,7 @@ export default function Header() {
                     <Link
                       href={item.href}
                       onClick={() => setIsOpen(false)}
-                      className="block text-4xl md:text-5xl font-bold text-white hover:text-lime-400 transition-colors py-2 text-center"
+                      className="block text-4xl md:text-5xl font-bold text-white hover:text-[#f5f0e8] transition-colors py-2 text-center"
                     >
                       {item.label}
                     </Link>
@@ -228,7 +228,7 @@ export default function Header() {
                 initial={{ scaleX: 0 }}
                 animate={{ scaleX: 1 }}
                 transition={{ delay: 0.6, duration: 0.8 }}
-                className="absolute bottom-20 left-6 right-6 h-[1px] bg-gradient-to-r from-transparent via-lime-400/50 to-transparent"
+                className="absolute bottom-20 left-6 right-6 h-[1px] bg-gradient-to-r from-transparent via-[#f5f0e8]/50 to-transparent"
               />
             </div>
           </motion.div>

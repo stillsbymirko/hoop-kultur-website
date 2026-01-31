@@ -37,7 +37,7 @@ export default function Services() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-lime-500 font-semibold text-sm uppercase tracking-wider">
+          <span className="text-[#d4c8b8] font-semibold text-sm uppercase tracking-wider">
             Angebot
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-2 font-serif">
@@ -59,9 +59,9 @@ export default function Services() {
               <motion.div
                 whileHover={{ scale: 1.1, rotate: 5 }}
                 transition={{ type: 'spring', stiffness: 400 }}
-                className="w-14 h-14 bg-lime-400/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-lime-400/20 transition-colors"
+                className="w-14 h-14 bg-[#f5f0e8]/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#f5f0e8]/20 transition-colors"
               >
-                <service.icon className="text-lime-500" size={28} />
+                <service.icon className="text-[#d4c8b8]" size={28} />
               </motion.div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">{service.title}</h3>
               <p className="text-gray-600">{service.description}</p>

@@ -57,7 +57,7 @@ export default function InstagramFeed() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <span className="text-lime-500 font-semibold text-sm uppercase tracking-wider">
+          <span className="text-[#d4c8b8] font-semibold text-sm uppercase tracking-wider">
             @hoopkultur
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-2 font-serif">
@@ -84,7 +84,7 @@ export default function InstagramFeed() {
               className="relative aspect-square bg-gray-200 rounded-xl overflow-hidden group cursor-pointer"
             >
               {/* Placeholder gradient - replace with actual images */}
-              <div className="absolute inset-0 bg-gradient-to-br from-lime-400/20 to-gray-300" />
+              <div className="absolute inset-0 bg-gradient-to-br from-[#f5f0e8]/20 to-gray-300" />
               
               {/* Hover Overlay */}
               <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">

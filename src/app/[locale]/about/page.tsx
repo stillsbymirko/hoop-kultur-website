@@ -34,7 +34,7 @@ export default function AboutPage() {
               transition={{ duration: 0.8 }}
               className="relative order-2 lg:order-1"
             >
-              <div className="relative aspect-[3/4] rounded-3xl overflow-hidden bg-gradient-to-br from-lime-400/20 to-gray-800">
+              <div className="relative aspect-[3/4] rounded-3xl overflow-hidden bg-gradient-to-br from-[#f5f0e8]/20 to-gray-800">
                 {/* Replace this with actual image */}
                 {/* <Image 
                   src="/images/coach.jpg" 
@@ -56,7 +56,7 @@ export default function AboutPage() {
                 initial={{ opacity: 0, scale: 0 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.5, type: 'spring' }}
-                className="absolute -bottom-6 -right-6 bg-lime-400 px-6 py-4 rounded-2xl shadow-xl"
+                className="absolute -bottom-6 -right-6 bg-[#f5f0e8] px-6 py-4 rounded-2xl shadow-xl"
               >
                 <div className="text-4xl font-bold text-gray-900">15+</div>
                 <div className="text-sm text-gray-700">Jahre Erfahrung</div>
@@ -80,7 +80,7 @@ export default function AboutPage() {
               transition={{ duration: 0.8 }}
               className="order-1 lg:order-2"
             >
-              <span className="text-lime-400 font-semibold text-sm uppercase tracking-wider">
+              <span className="text-[#f5f0e8] font-semibold text-sm uppercase tracking-wider">
                 Über mich
               </span>
               <h1 className="text-4xl md:text-6xl font-bold text-white mt-4 font-serif">
@@ -168,8 +168,8 @@ export default function AboutPage() {
                 transition={{ delay: index * 0.1 }}
                 className="flex items-center gap-3 bg-white p-4 rounded-xl"
               >
-                <div className="w-8 h-8 bg-lime-400/20 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Check className="text-lime-500" size={18} />
+                <div className="w-8 h-8 bg-[#f5f0e8]/20 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Check className="text-[#d4c8b8]" size={18} />
                 </div>
                 <span className="text-gray-700">{item}</span>
               </motion.div>
@@ -202,7 +202,7 @@ export default function AboutPage() {
                 transition={{ delay: index * 0.15 }}
                 className="flex gap-6 items-start"
               >
-                <div className="flex-shrink-0 w-20 h-20 bg-lime-400 rounded-2xl flex items-center justify-center">
+                <div className="flex-shrink-0 w-20 h-20 bg-[#f5f0e8] rounded-2xl flex items-center justify-center">
                   <span className="text-gray-900 font-bold text-lg">{milestone.year}</span>
                 </div>
                 <div>

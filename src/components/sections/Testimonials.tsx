@@ -35,7 +35,7 @@ export default function Testimonials() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-lime-400 font-semibold text-sm uppercase tracking-wider">
+          <span className="text-[#f5f0e8] font-semibold text-sm uppercase tracking-wider">
             Testimonials
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-white mt-2 font-serif">
@@ -55,14 +55,14 @@ export default function Testimonials() {
               className="relative bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-2xl"
             >
               {/* Quote Icon */}
-              <div className="absolute -top-4 -left-2 w-10 h-10 bg-lime-400 rounded-full flex items-center justify-center">
+              <div className="absolute -top-4 -left-2 w-10 h-10 bg-[#f5f0e8] rounded-full flex items-center justify-center">
                 <Quote size={20} className="text-gray-900" />
               </div>
 
               {/* Rating */}
               <div className="flex gap-1 mb-4 mt-2">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} size={16} className="text-lime-400 fill-lime-400" />
+                  <Star key={i} size={16} className="text-[#f5f0e8] fill-[#f5f0e8]" />
                 ))}
               </div>
 
@@ -73,8 +73,8 @@ export default function Testimonials() {
 
               {/* Author */}
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-lime-400/20 rounded-full flex items-center justify-center">
-                  <span className="text-lime-400 font-bold">
+                <div className="w-12 h-12 bg-[#f5f0e8]/20 rounded-full flex items-center justify-center">
+                  <span className="text-[#f5f0e8] font-bold">
                     {testimonial.name.charAt(0)}
                   </span>
                 </div>

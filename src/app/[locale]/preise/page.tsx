@@ -60,7 +60,7 @@ export default async function PreisePage({
       {/* Hero */}
       <section className="pt-32 pb-16 bg-[#1a1a1a]">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <span className="text-lime-400 font-semibold text-sm uppercase tracking-wider">
+          <span className="text-[#f5f0e8] font-semibold text-sm uppercase tracking-wider">
             Preise
           </span>
           <h1 className="text-4xl md:text-6xl font-bold text-white mt-4 font-serif">
@@ -80,12 +80,12 @@ export default async function PreisePage({
               <div
                 key={plan.name}
                 className={`relative bg-white p-8 rounded-2xl ${
-                  plan.popular ? 'ring-2 ring-lime-400 shadow-xl' : 'shadow-sm'
+                  plan.popular ? 'ring-2 ring-[#f5f0e8] shadow-xl' : 'shadow-sm'
                 }`}
               >
                 {plan.popular && (
                   <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                    <span className="inline-flex items-center gap-1 bg-lime-400 text-gray-900 px-4 py-1 rounded-full text-sm font-semibold">
+                    <span className="inline-flex items-center gap-1 bg-[#f5f0e8] text-gray-900 px-4 py-1 rounded-full text-sm font-semibold">
                       <Star size={14} fill="currentColor" />
                       Beliebt
                     </span>
@@ -103,7 +103,7 @@ export default async function PreisePage({
                 <ul className="space-y-3 mb-8">
                   {plan.features.map((feature) => (
                     <li key={feature} className="flex items-center gap-3 text-gray-600">
-                      <Check className="text-lime-500 flex-shrink-0" size={18} />
+                      <Check className="text-[#d4c8b8] flex-shrink-0" size={18} />
                       {feature}
                     </li>
                   ))}
@@ -113,7 +113,7 @@ export default async function PreisePage({
                   href={`/${locale}/contact`}
                   className={`block w-full text-center py-3 rounded-full font-semibold transition-colors ${
                     plan.popular
-                      ? 'bg-lime-400 hover:bg-lime-500 text-gray-900'
+                      ? 'bg-[#f5f0e8] hover:bg-[#ebe4d8] text-gray-900'
                       : 'bg-gray-100 hover:bg-gray-200 text-gray-900'
                   }`}
                 >

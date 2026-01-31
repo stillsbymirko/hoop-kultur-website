@@ -33,7 +33,7 @@ export default function About() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.5, type: 'spring' }}
               whileHover={{ scale: 1.1 }}
-              className="absolute -bottom-6 -right-6 bg-lime-400 px-6 py-4 rounded-2xl shadow-lg"
+              className="absolute -bottom-6 -right-6 bg-[#f5f0e8] px-6 py-4 rounded-2xl shadow-lg"
             >
               <div className="text-3xl font-bold text-gray-900">15+</div>
               <div className="text-sm text-gray-700">Jahre Erfahrung</div>
@@ -53,7 +53,7 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="text-lime-500 font-semibold text-sm uppercase tracking-wider"
+              className="text-[#d4c8b8] font-semibold text-sm uppercase tracking-wider"
             >
               Über mich
             </motion.span>
@@ -96,7 +96,7 @@ export default function About() {
               <Link href="/de/about">
                 <motion.span
                   whileHover={{ x: 5 }}
-                  className="inline-flex items-center gap-2 text-lime-600 hover:text-lime-700 font-semibold group"
+                  className="inline-flex items-center gap-2 text-[#b8a892] hover:text-[#a89882] font-semibold group"
                 >
                   Mehr erfahren
                   <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />

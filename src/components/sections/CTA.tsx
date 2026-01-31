@@ -21,7 +21,7 @@ export default function CTA() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.3, type: 'spring' }}
-            className="text-lime-400"
+            className="text-[#f5f0e8]"
           >
             nächste Level
           </motion.span>
@@ -48,7 +48,7 @@ export default function CTA() {
             <motion.span
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center justify-center gap-2 bg-lime-400 hover:bg-lime-500 text-gray-900 px-8 py-4 rounded-full font-semibold transition-colors"
+              className="inline-flex items-center justify-center gap-2 bg-[#f5f0e8] hover:bg-[#ebe4d8] text-gray-900 px-8 py-4 rounded-full font-semibold transition-colors"
             >
               Jetzt starten
               <ArrowRight size={20} />
@@ -60,7 +60,7 @@ export default function CTA() {
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="inline-flex items-center justify-center gap-2 border border-white/20 hover:border-lime-400 text-white hover:text-lime-400 px-8 py-4 rounded-full font-semibold transition-colors"
+            className="inline-flex items-center justify-center gap-2 border border-white/20 hover:border-[#f5f0e8] text-white hover:text-[#f5f0e8] px-8 py-4 rounded-full font-semibold transition-colors"
           >
             WhatsApp schreiben
           </motion.a>
