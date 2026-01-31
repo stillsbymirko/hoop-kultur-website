@@ -1,4 +1,7 @@
+'use client';
+
 import { Target, Users, Zap, Trophy } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const services = [
   {
@@ -27,27 +30,42 @@ export default function Services() {
   return (
     <section className="py-24 bg-[#f8f8f8]">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="text-center mb-16">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
+        >
           <span className="text-lime-500 font-semibold text-sm uppercase tracking-wider">
             Angebot
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-2 font-serif">
             Training für jeden Level
           </h2>
-        </div>
+        </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {services.map((service) => (
-            <div
+          {services.map((service, index) => (
+            <motion.div
               key={service.title}
-              className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-shadow group"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              whileHover={{ y: -8, transition: { duration: 0.2 } }}
+              className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow group cursor-pointer"
             >
-              <div className="w-14 h-14 bg-lime-400/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-lime-400/20 transition-colors">
+              <motion.div
+                whileHover={{ scale: 1.1, rotate: 5 }}
+                transition={{ type: 'spring', stiffness: 400 }}
+                className="w-14 h-14 bg-lime-400/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-lime-400/20 transition-colors"
+              >
                 <service.icon className="text-lime-500" size={28} />
-              </div>
+              </motion.div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">{service.title}</h3>
               <p className="text-gray-600">{service.description}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
